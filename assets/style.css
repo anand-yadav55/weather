@@ -14,6 +14,7 @@ header{
     margin-top: 2vh;
     text-align: center;
     margin-bottom: 5vh;
+    color: white;
 }
 .weatherBox{
     background-color: rgba(192, 162, 177,0.8);
@@ -76,6 +77,7 @@ footer{
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+    color: white;
 }
 .-one{
     animation: waveFlow 5500ms infinite linear;
