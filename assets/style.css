@@ -2,9 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-transform: uppercase;
 }
 html{
-    background-color: azure;
+    background: url('https://image.freepik.com/free-psd/abstract-background-design_1297-78.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    margin-top: 2vh;
+    text-align: center;
+    margin-bottom: 5vh;
 }
 .weatherBox{
     background-color: rgba(192, 162, 177,0.3);
@@ -13,11 +22,11 @@ html{
     border: 1px solid rgb(150, 178, 190);
     box-shadow: 0 0 20px;
     min-height: 500px;
-    min-width: 400px;
+    width: 35vw;
     border-radius: 5%;
     overflow: hidden;
     padding: 2%;
-    margin-left: 500px;
+    margin-left: 32.5vw;
     text-align: center;
 }
 .inputCity{
@@ -27,32 +36,46 @@ html{
     text-align: center;
     border: 2px solid grey;
 }
+input{
+    font-weight: 900;
+    font-size: large;
+}
 input[type="submit"]{
     display: none;
 }
 .cityName{
-    font-size: 3rem;
+    font-size: xx-large;
     font-weight: 900;
 }
 .countryName{
-    font-size: 1.5rem;
+    font-size: x-large;
 }
-.coord h3{
+h3{
     display: inline;
     font-weight: 100;
 }
 .coord span{
-    font-size: 0.8rem;
+    font-size: large;
 }
 .weatherDescription{
     margin-top: 1rem;
-    font-size: 1.9rem;
+    font-size: xx-large;
 }
 .otherWeather{
     margin-top: 1.3rem;
 }
 .otherWeather h3{
     display: inline;
+}
+.column{
+    margin: 1.5rem;
+    display: inline;
+    text-align: justify;
+}
+footer{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 .-one{
     animation: waveFlow 5500ms infinite linear;

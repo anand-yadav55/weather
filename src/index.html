@@ -9,21 +9,20 @@
 <body>
     <div class="container">
         <header>
-            <h1>Weather-App</h1>
-            <h3>Anand Yadav</h3>
+            <pre><h1>City CloudS</h1></pre>
         </header>
         <div class="weatherBox">
             <div class="getCity">
                 <form action="/" method="POST">
-                    <input type="text" class="inputCity" placeholder="Enter City Name">
+                    <input type="text" class="inputCity" placeholder="Enter City">
                     <input type="submit">
                 </form>
             </div>    
             <div class="cityName">-</div>
             <div class="countryName">-</div>
             <div class="coord">
-                <h3>Latitude: </h3><span class="latitude">-</span>
-                <h3>Longitude: </h3><span class="longitude">-</span>
+                <div class="column"><h3>Latitude </h3><span class="latitude">-</span></div>
+                <div class="column"><h3>Longitude </h3><span class="longitude">-</span></div>
             </div>
             <hr><hr>
             <div class="weather">
@@ -31,11 +30,11 @@
             </div>
             <hr><hr>
             <div class="otherWeather">
-                <h3>Temperature: </h3><span class="temperature">-</span>
-                <h3>Feels like: </h3><span class="feelsLike">-</span>
+                <div class="column"><h3>Temperature: </h3><span class="temperature">-</span></div>
+                <div class="column"><h3>Feels_like: </h3><span class="feelsLike">-</span></div>
                 <br><br>
-                <h3>Humidity: </h3><span class="humidity">-</span>
-                <h3>Wind: </h3><span class="wind">-</span>
+                <div class="column"><h3>Humidity: </h3><span class="humidity">-</span></div>
+                <div class="column"><h3>Wind: </h3><span class="wind">-</span></div>
             </div>
             <hr><hr>
             <div class="wave -one"></div>
@@ -44,5 +43,7 @@
         </div>
     </div>
     <script src="showWeather.js"></script>
+    <footer><code>This site is developed by Anand Yadav</code></footer>
+
 </body>
 </html>
