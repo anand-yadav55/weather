@@ -1,6 +1,6 @@
 const app = require('express') ();
 app.post('/getWeather',(req, res)=>{
-const PORT = process.env.PORT;
+let port = process.env.PORT;
 });
 app.get('/', (req, res)=>{
     res.sendFile("./src/index.html", {root:__dirname});
