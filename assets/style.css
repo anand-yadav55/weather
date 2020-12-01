@@ -3,13 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    background-color: azure;
+}
 .weatherBox{
+    background-color: rgba(192, 162, 177,0.3);
+    z-index: -3;
     position: absolute;
     border: 1px solid rgb(150, 178, 190);
+    box-shadow: 0 0 20px;
     min-height: 500px;
     min-width: 400px;
+    border-radius: 5%;
     overflow: hidden;
-    margin-left: 300px;
+    padding: 2%;
+    margin-left: 500px;
     text-align: center;
 }
 .inputCity{
@@ -56,28 +64,31 @@ input[type="submit"]{
     position: absolute;
     bottom: -200%;
     left: -30%;
+    z-index: -1;
 }
 .-two{
     animation: waveFlow 5000ms infinite linear;
     background-color: rgba(209, 226, 231, 0.5);
     border-radius: 50%;
-    box-shadow: 10px 10px 10px rgba(209, 226, 231, 0.8);
+    box-shadow: 10px 10px 10px white;/*rgba(209, 226, 231, 0.8);*/
     height: 250%;
     width: 250%;
     position: absolute;
     left: -50%;
     bottom: -200%;
+    z-index: -2;
 }
 .-three{
     animation: waveFlow 5700ms infinite linear;
     background-color: rgba(114, 156, 170, 0.4);
     border-radius: 50%;
-    box-shadow: 10px 10px 10px rgba(114, 156, 170, 0.4);
+    box-shadow: 10px 10px 10px white; /*rgba(114, 156, 170, 0.4);*/
     height: 250%;
     width: 250%;
     position: absolute;
     left: -80%;
     bottom: -200%;
+    z-index: -3;
 }
 @keyframes waveFlow{
     from {transform: rotate(360deg);}

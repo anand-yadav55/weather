@@ -1,0 +1,24 @@
+document.querySelector("form").addEventListener("submit", async event=>{
+    event.preventDefault();
+    let inputCity = document.querySelector('input[type="text"]').value;
+    let api_result = await (await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&appid=1e3a1b0af8857e5ed08d1b643dc8f1ff`)).json();
+    console.log(api_result);
+    let cityName = document.querySelector(".cityName");
+    let countryName = document.querySelector(".countryName");
+    let latitude = document.querySelector(".latitude");
+    let longitude = document.querySelector(".longitude");
+    let weatherDescription = document.querySelector(".weatherDescription");
+    let temperature = document.querySelector(".temperature");
+    let feelsLike = document.querySelector(".feelsLike");
+    let humidity = document.querySelector(".humidity");
+    let wind = document.querySelector(".wind");
+    cityName.innerText = api_result.name;
+    countryName.innerText = api_result.sys.country;
+    latitude.innerText = api_result.coord.lat;
+    longitude.innerText = api_result.coord.lon;
+    weatherDescription.innerText = api_result.weather[0].description;
+    temperature.innerText = api_result.main.temp+" F";
+    feelsLike.innerText = api_result.main.feels_like+" F";
+    wind.innerText = api_result.wind.deg;
+    humidity.innerText = api_result.main.humidity;
+});
